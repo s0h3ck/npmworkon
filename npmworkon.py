@@ -39,8 +39,10 @@ class NpmWorkon:
             subprocess.run(cmd, shell=True, check=True)
 
         cmd = f"source { path / 'bin' / 'activate' }" # TODO: Not sure how to solve this :(
-        subprocess.run(cmd, shell=True, check=True)
 
+        import sys
+        sys.stdout.write(cmd)
+        
     def remove_environment(self, environment):
         shutil.rmtree( self.root / environment )
 
