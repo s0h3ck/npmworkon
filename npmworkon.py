@@ -17,6 +17,7 @@ class NpmWorkon:
 
         parser = argparse.ArgumentParser()
         parser.add_argument('environment', type=str, nargs='?', help="Environment to create")
+        parser.add_argument('--node', type=str, help='Specify version of node to install')
         parser.add_argument('--rm', type=str, help="Remove environment")
         
         self.args = parser.parse_args()
