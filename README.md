@@ -10,7 +10,7 @@ If you want it in the same virtualenv wrapper, `nodeenv -p` is what you want and
 pip install npmworkon
 ```
 
-The npm virtualenv will be created in the home directory `.npmvirtualenvs"`. For now, this value is hardcoded.
+The npm virtualenv will be created in the home directory `.npmvirtualenvs`. For now, this value is hardcoded.
 
 ## Usage
 
