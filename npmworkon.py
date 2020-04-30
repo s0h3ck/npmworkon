@@ -36,7 +36,7 @@ class NpmWorkon:
 
         if not path.exists():
             cmd = f"nodeenv {path}"
-            subprocess.run(cmd, shell=True, check=True)
+            result = subprocess.run(cmd, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         cmd = f"source { path / 'bin' / 'activate' }" # TODO: Not sure how to solve this :(
 

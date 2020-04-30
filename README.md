@@ -14,18 +14,41 @@ The npm virtualenv will be created in the home directory `.npmvirtualenvs"`. For
 
 ## Usage
 
-Create a new virtualenv
+Create a Python virtualenv
 ```
-$(npmworkon node_env)
+➜ mkvirtualenv py_venv
+[...]
+```
+
+Install npmworkon
+```
+Install npmworkon
+(py_venv) ➜ pip install npmworkon
+[...]
+```
+
+Create a npm virtualenv
+```
+(py_venv) ➜ $(npmworkon node_venv)
 ```
 
 List npm virtualenv
-
 ```
-npmworkon
+(node_venv) (py_venv) ➜ npmworkon
+node_venv
 ```
 
 Desactivate npm virtualenv
 ```
-deactivate_node
+(node_venv) (py_venv) ➜ deactivate_node
+(py_venv) ➜ npmworkon --rm node_venv
+```
+
+Remove npm virtualenv
+```
+(node_venv) (py_venv) ➜ deactivate_node
+(py_venv) ➜ npmworkon --rm node_venv
+
+(py_venv) ➜ npmworkon
+# node_venv is gone :)
 ```
