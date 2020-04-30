@@ -9,7 +9,7 @@ setup(
     version='0.1.0',
     author='s0h3ck',
     author_email='s0h3ck@gmail.com',
-    description='Node.js virtual environment wrapper',
+    description='Node.js virtual environment wrapper on top of nodeenv',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/s0h3ck/npmworkon/',
@@ -20,7 +20,9 @@ setup(
             'npmworkon = npmworkon:main'
         ]
     },
-    install_requires=['nodeenv'],
+    install_requires=[
+        'nodeenv',
+    ],
     keywords='node npm virtual environment wrapper',
     classifiers=[
         'Programming Language :: Python :: 3',
