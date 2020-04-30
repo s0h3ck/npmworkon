@@ -22,7 +22,6 @@ Create a Python virtualenv
 
 Install npmworkon
 ```
-Install npmworkon
 (py_venv) ➜ pip install npmworkon
 [...]
 ```
