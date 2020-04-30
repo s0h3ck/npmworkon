@@ -41,12 +41,10 @@ node_venv
 Desactivate npm virtualenv
 ```
 (node_venv) (py_venv) ➜ deactivate_node
-(py_venv) ➜ npmworkon --rm node_venv
 ```
 
 Remove npm virtualenv
 ```
-(node_venv) (py_venv) ➜ deactivate_node
 (py_venv) ➜ npmworkon --rm node_venv
 
 (py_venv) ➜ npmworkon
